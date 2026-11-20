@@ -1,0 +1,28 @@
+tasks:
+  - id: FML-AIOS-001
+    title: Establish canonical repository contract and portable operator skill
+    status: BUILDING
+    priority: P0
+    owner: ChatGPT
+    acceptance:
+      - Shared agent contract exists
+      - Portable skill source exists
+      - Machine-readable system and project state exist
+      - Repository security boundaries are explicit
+    evidence:
+      - README.md
+      - AGENTS.md
+      - skills/fml-operator/SKILL.md
+      - state/SYSTEM_STATE.yaml
+      - state/PROJECT_STATE.yaml
+    next_action: Verify repository files and commit state; then configure first external agent adapter.
+  - id: FML-AIOS-002
+    title: Prove second-agent read and write cycle
+    status: PROPOSED
+    priority: P0
+    owner: unassigned
+    acceptance:
+      - Second agent reads canonical state
+      - Second agent updates a bounded test task
+      - Changes are visible in Git history
+      - No operator copy/paste of project context is required
